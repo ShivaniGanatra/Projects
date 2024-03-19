@@ -39,4 +39,31 @@
     height: 208px;
     background-color: lightsteelblue;
     color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 20px solid green;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.section__subs {
+    background-color: pink;
+    height: 217px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: aquamarine;
+
+}
+
+.footer__section__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
