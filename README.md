@@ -15,5 +15,14 @@ Add sccs primary colours
     </form>
 
 
+    find out how to do a dashed button when using hover
+
+    make animation for first two images
+
+    tidy up and indent code
+
+    add google fonts
+
+    check section sub and find a better class instead of section subs/section sub
 
 
