@@ -12,6 +12,20 @@
   color: white;
 }
 
+.material-symbols-outlined {
+  background-color: pink;
+  font-size: 50px;
+}
+
+.header__logo {
+  height: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav {
   display: flex;
   flex-direction: column;
