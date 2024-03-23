@@ -27,4 +27,39 @@ Add sccs primary colours
 
     switch nav and header
 
+    add swimwear image
 
+change nav to headery
+
+add styling to button and hover effect to button
+
+        <!-- double check if these follow bem -->
+        <!-- <div class="nav "> 
+            <a class="nav__label" href="">Hollister</a>
+            <a class="nav__label" href="">Women's</a>
+            <a class="nav__label" href="">Men's</a>
+            <a class="nav__label" href="">Jeans</a>
+            <a class="nav__label" href="">Activewear</a>
+            <a class="nav__label" href="">Sale</a>
+            <a class="nav__label" href="">Purpose</a>
+        </div>
+        <div>
+            <a class="nav__label" href="">Search</a>
+            <a class="nav__label" href="">Country</a>
+            <a class="nav__label" href="">Heart</a>
+            <a class="nav__label" href="">Basket</a>
+        </div> -->
+
+
+                <!-- <footer>
+            <div>About Us</div>
+            <div>Privacy Notice</div>
+            <div>Cookie Policy</div>
+            <div>Sale Terms</div>
+            <div>Hollister House Reward Terms</div>
+            <div>Website Terms of Use</div>
+            <div>Endorsements Social Media Engagement</div>
+            <div>Site Map</div>
+            <div>Manage my Preferences</div>
+            <div>Responsible disclosure</div>
+        </footer> -->
