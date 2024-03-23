@@ -8,6 +8,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variables.scss">
 
 </head>
 
@@ -28,14 +29,13 @@
 
     <header class="header">
         <h1 class="header__message">Free Delivery On orders over £50</h1>
-        <h2 class="header__label">
-            <a class="header__label__1" href="">Shop Women's</a>
-            <a class="header__label__2" href="">Shop Men's</a>
+        <h2 class="header__links">
+            <a class="header__link" href="">Shop Women's</a>
+            <a class="header__link" href="">Shop Men's</a>
         </h2>
     </header>
 
     <main>
-
 
         <section class="sections">
 
@@ -43,7 +43,8 @@
                 <img class="section__img" src="./images/KIC_359-4048-0058-100_model1.jpg" alt="dress">
                 <div class="section__label">
                     <p class="section__text">Hollister Sadie Skort Dress</p>
-                    <p class="section__text">Built-in biker shorts and pockets so you can wear it everywhere.</p>
+                    <p class="section__text section__text--small-text">Built-in biker shorts and pockets so you can wear
+                        it everywhere.</p>
                     <a class="section__link" href="">Women's Dresses</a>
                 </div>
             </div>
@@ -52,7 +53,8 @@
                 <img class="section__img" src="./images/KIC_325-4002-0046-100_life1.jpg" alt="">
                 <div class="section__label">
                     <p class="section__text">Linen-Blend Shirt</p>
-                    <p class="section__text">Look put together without all the effort. These lightweight shirts do that
+                    <p class="section__text section__text--small-text">Look put together without all the effort. These
+                        lightweight shirts do that
                         for you.</p>
                     <a class="section__link" href="">Men's Shirts</a>
                 </div>
@@ -61,10 +63,8 @@
         </section>
 
         <section class="banner">
-            <div class="banner__text">
-                <div class="banner__text__1">New Arrivals</div>
-                <div class="banner__text__2">Uncomplicated styles that pull every outfit together</div>
-            </div>
+            <div class="banner__text">New Arrivals</div>
+            <div class="banner__text">Uncomplicated styles that pull every outfit together</div>
         </section>
 
         <section class="sections">
@@ -90,11 +90,14 @@
         <section class="sections">
 
             <div class="section">
-                <img class="section__img" src="./images/beach pic.jpg" alt="">
+                <img class="section__img section__wide-img" src="./images/beach pic.jpg" alt="">
                 <div class="section__label">
-                    <div class="section__text">Swim is heating up in a range of colours sizes and styles</div>
-                    <a class="section__link" href="">Shop Women's</a>
-                    <a class="section__link" href="">Shop Men's</a>
+                    <div class="section__text section__text--small-text">Swim is heating up in a range of colours sizes
+                        and styles</div>
+                    <div class="section__links">
+                        <a class="section__link" href="">Shop Women's</a>
+                        <a class="section__link" href="">Shop Men's</a>
+                    </div>
                 </div>
             </div>
 
@@ -103,7 +106,7 @@
 
         <section class="sections">
             <div class="section">
-                <img class="section__img" src="./images/gilly hicks active.jpg" alt="">
+                <img class="section__img section__wide-img" src="./images/gilly hicks active.jpg" alt="">
                 <div class="section__label">
                     <div class="section__text">Gilly Hicks Active</div>
                     <div class="section__text">Going places</div>
@@ -115,12 +118,12 @@
 
 
         <section class="message">
-            <div class="message__label">
-                <div class="message__label__header">Unidays</div>
-                <div class="message__label__text">STUDENTS GET AN EXTRA 10% OFF</div>
-                <div class="message__label__text">For instant access to this discount simply join now and</div>
-                <div class="message__label__text">Verify your student status with Unidays</div>
-                <a class="message__label__link" href="">Join Now</a>
+            <div class="message__labels">
+                <div class="message__header">Unidays</div>
+                <div class="message__text">STUDENTS GET AN EXTRA 10% OFF</div>
+                <div class="message__text">For instant access to this discount simply join now and</div>
+                <div class="message__text">Verify your student status with Unidays</div>
+                <a class="message__link" href="">Join Now</a>
             </div>
         </section>
 
@@ -145,18 +148,19 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__section__1">
-            <div class="footer__section__1__text"> Because our legal team said we have to talk about legal stuff:</div>
-            <div class="footer__section__1__text">‡18+, T&Cs apply (klarna.com/uk/terms-and-conditions), Credit subject
+        <div class="footer__section">
+            <div class="footer__text"> Because our legal team said we have to talk about legal stuff:</div>
+            <div class="footer__text">‡18+, T&Cs apply (klarna.com/uk/terms-and-conditions), Credit subject
                 to status.</div>
-            <a class="footer__section__1__link" href="">See All Offer Details</a>
+            <a class="footer__link" href="">See All Offer Details</a>
         </div>
-        <div class="footer__section__2">
-            <div class="footer__section__2__text"> We use cookies on our website</div>
-            <div class="footer__section__2__link">We use cookies on our website for more information see our cookies
+        <div class="footer__section">
+            <div class="footer__text"> We use cookies on our website</div>
+            <div class="footer__link">We use cookies on our website for more information see our cookies
                 policy</div>
         </div>
     </footer>
 
 </body>
+
 </html>

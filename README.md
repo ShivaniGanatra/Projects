@@ -19,17 +19,17 @@ Add sccs primary colours
 
     make animation for first two images
 
-    tidy up and indent code
+    tidy up and indent code done
 
     add google fonts
 
-    check section sub and find a better class instead of section subs/section sub
+    check section sub and find a better class instead of section subs/section sub done
 
-    switch nav and header
+    switch nav and header done
 
-    add swimwear image
+    add swimwear image done
 
-change nav to headery
+change nav to headery done
 
 add styling to button and hover effect to button
 
