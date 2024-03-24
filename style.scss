@@ -1,3 +1,6 @@
+@use"./variables" as *;
+
+
 * {
     padding: 0;
     border: 0;
@@ -22,22 +25,31 @@
     &__button {
         font-size: 30px;
         padding: 4px;
+        background-color: white;
 
     }
 }
 
 .header {
-    background-color: lightblue;
-    height: 80px;
+    background-color: $secondary-color;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
-    color: white;
 
 
+    &__link {
+        color: white;
+        font-size: 20px;
+        padding: 7px;
+    }
 
+    &__message {
+        color: white;
+        font-size: 20px;
+        padding: 5px;
+    }
 }
 
 .section {
@@ -55,7 +67,6 @@
 
     &__label {
         display: flex;
-        background-color: pink;
         flex-direction: column;
         height: 100px;
         align-items: center;
@@ -64,20 +75,24 @@
         text-align: center;
     }
 
+    &__link {
+        color: $quaternary-color;
+    }
+
     &__button {
         padding: 10px;
         border-radius: 20px;
-        border: 2px solid black;
+        border: 2px solid $quaternary-color;
         transition: background-color 0.3s ease;
     }
 
     &__button:hover {
-        background-color: black;
+        background-color: $quaternary-color;
         color: white;
     }
 
     &__text {
-        background-color: bisque;
+        background-color: $primary-color;
         padding: 7px;
 
         &--small-text {
@@ -87,7 +102,7 @@
 }
 
 .banner {
-    background-color: blueviolet;
+    background-color: $primary-color;
     height: 110px;
     display: flex;
     flex-direction: column;
@@ -107,7 +122,7 @@
 }
 
 .sub-section__items {
-    background-color: grey;
+    background-color: $tertiary-color;
     max-width: 100%;
     height: 200px;
     border-radius: 20px;
@@ -157,7 +172,7 @@
     .sub-section {
         display: flex;
         flex-direction: row;
-        background-color: greenyellow;
+
 
         &__items {
             width: 33vw;
@@ -165,7 +180,7 @@
     }
 
     .footer {
-        background-color: aquamarine;
+        background-color: $tertiary-color;
 
         &__section {
             display: flex;
