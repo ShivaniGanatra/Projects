@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -27,19 +30,46 @@
         </div>
     </nav>
 
-    <div class="navbar">
+    <!-- <div class="navbar">
         <div class="logo"><a class="nav__button material-symbols-outlined"> Menu</a></div>
-        <ul class="links">
-            <li><a href="Women's">Women's</a></li>
-            <li><a href="Mens">Mens</a></li>
-            <li><a href="Jeans">Jeans</a></li>
-            <li><a href="Activewear">Activewear</a></li>
-            <li><a href="Sales">Sale</a></li>
-
-
+        <ul class="logo__links">
+            <li><a class="logo__link logo__link--Women's" href="Women's">Women's</a></li>
+            <li><a class="logo__link logo__link--Mens" href="Mens">Mens</a></li>
+            <li><a class="logo__link logo__link--Jeans" href="Jeans">Jeans</a></li>
+            <li><a class="logo__link logo__link--Activewear" href="Activewear">Activewear</a></li>
+            <li><a class="logo__link logo__link--Sale" href="Sales">Sale</a></li>
         </ul>
-
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
+
+    <div class="dropdown_menu">
+        <li><a class="logo__link logo__link--Women's" href="Women's">Women's</a></li>
+        <li><a class="logo__link logo__link--Mens" href="Mens">Mens</a></li>
+        <li><a class="logo__link logo__link--Jeans" href="Jeans">Jeans</a></li>
+        <li><a class="logo__link logo__link--Activewear" href="Activewear">Activewear</a></li>
+        <li><a class="logo__link logo__link--Sale" href="Sales">Sale</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_button')
+        const toggleBtnIcon = document.querySelector('.toggle_button i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+
+    </script> -->
 
     <header class="header">
         <h1 class="header__message">Free Delivery On orders over £50</h1>
@@ -104,7 +134,7 @@
         <section class="sections">
 
             <div class="section">
-                <img class="section__img section__wide-img" src="./images/beach pic.jpg" alt="">
+                <img class="section__img section__img--wide-img" src="./images/beach pic.jpg" alt="">
                 <div class="section__label">
                     <div class="section__text section__text--small-text">Swim is heating up in a range of colours sizes
                         and styles</div>

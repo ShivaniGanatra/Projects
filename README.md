@@ -3,7 +3,7 @@
 Ensure correct SCSS and BEM is used
 Bem example
 
-Add sccs primary colours
+Add sccs primary colours done
 
  <form class="form">
         <img class="form__img" src="" alt="">
@@ -13,7 +13,6 @@ Add sccs primary colours
         <input class="form__input" type="text" name="" id="">
         <button class="form__submit form__submit--active">Submit</button>
     </form>
-
 
     find out how to do a dashed button when using hover
 
@@ -31,10 +30,10 @@ Add sccs primary colours
 
 change nav to headery done
 
-add styling to button and hover effect to button
+add styling to button and hover effect to button done
 
         <!-- double check if these follow bem -->
-        <!-- <div class="nav "> 
+        <!-- <div class="nav ">
             <a class="nav__label" href="">Hollister</a>
             <a class="nav__label" href="">Women's</a>
             <a class="nav__label" href="">Men's</a>
