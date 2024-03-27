@@ -1,4 +1,4 @@
-@use"./variables"as*;
+@use"./variables" as*;
 @use"./interactive-navbar";
 
 
@@ -12,12 +12,21 @@
 
 }
 
+.navigation-desktop {
+    display: none;
+}
+
+.footer-desktop {
+    display: none;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    background-color: $primary-color;
 
 
     &__logo {
@@ -148,139 +157,6 @@
 }
 
 
-// li {
-//     list-style: none;
-// }
-
-// a {
-//     text-decoration: none;
-//     color: rgb(178, 23, 165);
-//     font-size: 1rem;
-// }
-
-// a:hover {
-//     color: grey;
-// }
-
-// // header
-// header {
-//     position: relative;
-//     padding: 0.2rem;
-// }
-
-// .navbar {
-//     width: 100%;
-//     height: 60px;
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
-
-// .navbar .logo a {
-//     font-size: 1.5rem;
-//     font-weight: bold;
-// }
-
-// .navbar .logo__links {
-//     display: flex;
-//     gap: 2rem;
-// }
-
-// .navbar .toggle_btn {
-//     color: white;
-//     font-size: 1.5rem;
-//     cursor: pointer;
-//     display: none;
-// }
-
-// .action_btn {
-//     background-color: orange;
-//     color: black;
-//     padding: none;
-//     border: none;
-//     border-radius: 20px;
-//     font-size: 0.8rem;
-//     font-weight: bold;
-//     cursor: pointer;
-//     transition: scale 0.2 ease;
-// }
-
-// .action_btn:hover {
-//     scale: 0.5s;
-//     color: aliceblue;
-// }
-
-// .action_btn:active {
-//     scale: 0.95;
-// }
-
-// // dropdown menu
-// .dropdown_menu{
-//     display: none;
-//     position: absolute;
-//     right: 2rem;
-//     top: 60px;
-//     height: 0;
-//     width: 300px;
-//     background: rgba(255, 255 ,255 , 0.1);
-//     backdrop-filter: blur(15px);
-//     border-radius: 10px;
-//     overflow: hidden;
-//     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-// }
-
-// .dropdown_menu.open{
-//     height: 240px;
-
-// }
-
-// .dropdown_menu li {
-//     padding: 0.7rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .dropdown_menu .action_btn {
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-
-
-// }
-
-// // responsive design
-// @media(max-width: 992px) {
-//     .navbar_links,
-//     .navbar .action_btn {
-//         display: none;
-//     }
-
-//     .navbar .toggle_btn {
-//         display: block;
-//     }
-
-//     .dropdown_menu {
-//         display: block;
-//     }
-// }
-
-// @media(max-width: 576px){
-//     .dropdown_menu{
-//         left: 2rem;
-//         width: unset;
-//     }
-
-// }
-
-
-
-
-
-
-
 @media screen and (min-width:768px) {
     .header {
         display: flex;
@@ -327,3 +203,181 @@
 
 }
 
+@media screen and (min-width:1440px) {
+    .navigation-desktop {
+        display: block;
+    }
+
+
+
+    .navigation-desktop {
+        padding: 0px 200px 0px 200px;
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navigation-desktop-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navigation-desktop-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__link {
+            padding: 10px;
+            color: $quaternary-color;
+            text-decoration: none;
+            transition: border-bottom 0.3s ease;
+            position: relative;
+        }
+
+        &__link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: $quaternary-color;
+            transition: width 0.3s ease;
+            width: 0;
+        }
+
+        &__link:hover::after {
+            width: 100%;
+        }
+
+    }
+
+    .navigation-desktop-left__link--hollister {
+        height: 50px;
+        padding: 10px;
+    }
+
+    .sections {
+        padding: 0px 200px;
+    }
+
+
+    .message {
+        width: 1040px;
+        margin: 0 auto;
+    }
+
+    .message__labels {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1220px;
+    }
+
+    .sub-section {
+        width: 1040px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-desktop {
+        display: block;
+    }
+
+    .footer__section--unset {
+        display: none;
+    }
+
+    .footer-main {
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    .footer-end {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        gap: 8px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .brand {
+        width: 150px;
+        padding: 20px;
+    }
+
+    .about-us {
+        width: 150px;
+        padding: 20px;
+    }
+
+    .help-section {
+        width: 150px;
+        padding: 20px;
+    }
+
+    .connect {
+        width: 300px;
+        padding: 20px;
+
+        &__button {
+        border: 2px solid $quaternary-color;
+        padding: 15px;  
+        border-radius: 30px;
+        transition: 0.3s ease;
+        }
+
+        &__button:hover {
+            background-color: $quinary-colour;
+        }
+
+        &__button:active {
+            border: dashed $quaternary-color 2px;
+        }
+    }
+
+    .connect-svg-container{
+        display: flex;
+        
+        justify-content: space-between;
+    }
+
+    .svg-icon {
+        width: 25px;
+    }
+
+    .svg-icon path {
+        fill: $quaternary-color;
+        transition: 0.3s ease;
+        fill-opacity: 0.5;
+    }
+
+    .svg-icon path:hover {
+        fill-opacity: 1;
+    }
+
+    .extras {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+}
