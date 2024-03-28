@@ -40,12 +40,12 @@
   justify-content: center;
 }
 .header__link {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   padding: 7px;
 }
 .header__message {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   padding: 5px;
 }
@@ -79,7 +79,7 @@
 }
 .section__button:hover {
   background-color: black;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .section__text {
   background-color: rgb(255, 255, 255);
@@ -122,7 +122,7 @@
 }
 
 .footer {
-  background-color: antiquewhite;
+  background-color: rgb(240, 240, 240);
   height: 300px;
   display: flex;
   justify-content: center;
@@ -184,10 +184,19 @@
     flex-direction: row;
     align-items: center;
   }
+  .navigation-desktop-right__button {
+    font-size: 30px;
+    padding: 4px;
+    background-color: white;
+  }
   .navigation-desktop-left {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .navigation-desktop-left__img {
+    height: 50px;
+    padding: 10px;
   }
   .navigation-desktop-left__link {
     padding: 10px;
@@ -210,10 +219,6 @@
   .navigation-desktop-left__link:hover::after {
     width: 100%;
   }
-  .navigation-desktop-left__link--hollister {
-    height: 50px;
-    padding: 10px;
-  }
   .sections {
     padding: 0px 200px;
   }
@@ -235,37 +240,29 @@
   .footer {
     height: auto;
   }
-  .footer-desktop {
-    display: block;
-  }
   .footer__section--unset {
     display: none;
   }
-  .footer-main {
+  .footer-desktop {
+    display: block;
+  }
+  .footer-desktop-sections {
     font-size: 13px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer-end {
+  .footer-desktop-section {
+    width: 150px;
+    padding: 20px;
+  }
+  .footer-desktop-end {
     display: flex;
     flex-direction: row;
     font-size: 12px;
     gap: 8px;
     text-decoration: none;
     color: black;
-  }
-  .brand {
-    width: 150px;
-    padding: 20px;
-  }
-  .about-us {
-    width: 150px;
-    padding: 20px;
-  }
-  .help-section {
-    width: 150px;
-    padding: 20px;
   }
   .connect {
     width: 300px;
@@ -287,15 +284,15 @@
     display: flex;
     justify-content: space-between;
   }
-  .svg-icon {
+  .connect-svg-container__icon {
     width: 25px;
   }
-  .svg-icon path {
+  .connect-svg-container__icon path {
     fill: black;
     transition: 0.3s ease;
     fill-opacity: 0.5;
   }
-  .svg-icon path:hover {
+  .connect-svg-container__icon path:hover {
     fill-opacity: 1;
   }
   .extras {

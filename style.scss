@@ -7,9 +7,6 @@
     border: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
-
-
 }
 
 .navigation-desktop {
@@ -52,13 +49,13 @@
 
 
     &__link {
-        color: white;
+        color: $primary-color;
         font-size: 20px;
         padding: 7px;
     }
 
     &__message {
-        color: white;
+        color: $primary-color;
         font-size: 20px;
         padding: 5px;
     }
@@ -75,7 +72,6 @@
             object-fit: cover;
         }
     }
-
 
     &__label {
         display: flex;
@@ -100,7 +96,7 @@
 
     &__button:hover {
         background-color: $quaternary-color;
-        color: white;
+        color: $primary-color;
     }
 
     &__text {
@@ -124,6 +120,7 @@
 }
 
 .message {
+    // will add background image and remove background clour
     background-color: antiquewhite;
     height: 190px;
     display: flex;
@@ -145,9 +142,8 @@
     flex-direction: column;
 }
 
-
 .footer {
-    background-color: antiquewhite;
+    background-color: $tertiary-color;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -156,13 +152,11 @@
     padding: 20px;
 }
 
-
 @media screen and (min-width:768px) {
     .header {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .sections {
@@ -177,13 +171,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .sub-section {
         display: flex;
         flex-direction: row;
-
 
         &__items {
             width: 33vw;
@@ -208,8 +200,6 @@
         display: block;
     }
 
-
-
     .navigation-desktop {
         padding: 0px 200px 0px 200px;
         background-color: $primary-color;
@@ -227,12 +217,24 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        &__button {
+            font-size: 30px;
+            padding: 4px;
+            background-color: white;
+
+        }
     }
 
     .navigation-desktop-left {
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        &__img {
+            height: 50px;
+            padding: 10px;
+        }
 
         &__link {
             padding: 10px;
@@ -257,30 +259,23 @@
         &__link:hover::after {
             width: 100%;
         }
-
-    }
-
-    .navigation-desktop-left__link--hollister {
-        height: 50px;
-        padding: 10px;
     }
 
     .sections {
         padding: 0px 200px;
     }
 
-
     .message {
         width: 1040px;
         margin: 0 auto;
-    }
 
-    .message__labels {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 1220px;
+        &__labels {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 1220px;
+        }
     }
 
     .sub-section {
@@ -290,26 +285,29 @@
 
     .footer {
         height: auto;
+
+        &__section--unset {
+            display: none;
+        }
     }
 
     .footer-desktop {
         display: block;
     }
 
-    .footer__section--unset {
-        display: none;
-    }
-
-    .footer-main {
+    .footer-desktop-sections {
         font-size: 13px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
+    .footer-desktop-section {
+        width: 150px;
+        padding: 20px;
+    }
 
-
-    .footer-end {
+    .footer-desktop-end {
         display: flex;
         flex-direction: row;
         font-size: 12px;
@@ -318,30 +316,15 @@
         color: black;
     }
 
-    .brand {
-        width: 150px;
-        padding: 20px;
-    }
-
-    .about-us {
-        width: 150px;
-        padding: 20px;
-    }
-
-    .help-section {
-        width: 150px;
-        padding: 20px;
-    }
-
     .connect {
         width: 300px;
         padding: 20px;
 
         &__button {
-        border: 2px solid $quaternary-color;
-        padding: 15px;  
-        border-radius: 30px;
-        transition: 0.3s ease;
+            border: 2px solid $quaternary-color;
+            padding: 15px;
+            border-radius: 30px;
+            transition: 0.3s ease;
         }
 
         &__button:hover {
@@ -353,24 +336,23 @@
         }
     }
 
-    .connect-svg-container{
+    .connect-svg-container {
         display: flex;
-        
         justify-content: space-between;
-    }
 
-    .svg-icon {
-        width: 25px;
-    }
+        &__icon {
+            width: 25px;
+        }
 
-    .svg-icon path {
-        fill: $quaternary-color;
-        transition: 0.3s ease;
-        fill-opacity: 0.5;
-    }
+        &__icon path {
+            fill: $quaternary-color;
+            transition: 0.3s ease;
+            fill-opacity: 0.5;
+        }
 
-    .svg-icon path:hover {
-        fill-opacity: 1;
+        &__icon path:hover {
+            fill-opacity: 1;
+        }
     }
 
     .extras {
@@ -379,5 +361,4 @@
         flex-direction: column;
         padding: 20px;
     }
-
 }
