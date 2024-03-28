@@ -188,6 +188,22 @@
     font-size: 30px;
     padding: 4px;
     background-color: white;
+    transition: border-bottom 0.3s ease;
+    position: relative;
+  }
+  .navigation-desktop-right__button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+    width: 0;
+  }
+  .navigation-desktop-right__button:hover::after {
+    width: 100%;
   }
   .navigation-desktop-left {
     display: flex;
